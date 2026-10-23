@@ -1,0 +1,325 @@
+/*
+      IT IS NOT FINISHED! I AM STILL WORKING ON IT. I WILL MAKE THE FILE MORE READABLE LATER.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#########################################
+######===-- TABLE OF CONTENTS --===######
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#########################################
+*/
+
+
+
+/*=========----- COLOURS AS VARIABLES -----=========*/
+:root{
+    --darkbase: #121212 ;
+    --darksecond: #1e1e1e ;
+    --darkthird: #272727;
+    --darkfourth:#2e2e2e ;
+    --darkfifth: #383838 ;
+    
+    --textbase: #e0e0e0 ;
+    --textsecond: #a0a0a0 ;
+    --textdisabled: #6c6c6c ;
+    
+    --primaccent: #bb86fc ;
+    --primerror: #cf6679 ;
+    
+    /* huuuuge thanks to riri for the colour palette */
+}
+
+
+
+/* LOGIN */
+.pagelayout-login #region-main {
+  background-color: var(--darkbase);
+}
+
+.pagelayout-login #page{
+    background: var(--darkbase);
+}
+
+.login-container{
+    background-color: var(--darksecond);
+}
+
+#page-local-login-index #local-login-options .idp-login.container-fluid .btn-secondary{
+    color: var(--textbase);
+    background-color: var(--darkthird);
+    border-color: var(--darkfifth);
+}
+
+#page-local-login-index #local-login-options .idp-login.container-fluid .btn-secondary:hover{
+    color: var(--textbase);
+    background-color: var(--darkfifth);
+    border-color: var(--darkfourth);
+}
+
+
+
+
+
+/*=========----- GENERAL (UNIVERSAL) ELEMENTS -----=========*/
+
+body{
+    background-color: var(--darkbase);
+    color: var(--textbase);
+    border-color: #f00;
+}
+
+
+/*=========----- MAIN PAGE VIEW OF HOME & DASHBOARD & MY COURSE -----=========*/
+
+/* first card (not the background) */
+#page.drawers .main-inner{
+    background-color: var(--darksecond);
+    border: solid 1px;
+    border-color: var(--darkfifth)
+}
+
+/* lesson cards */
+.block .block-cards .progress-text {
+  color: var(--textdisabled);
+}
+
+.block .block-cards span.categoryname, .block .block-cards .btn-link {
+  color: var(--textdisabled);
+}
+
+/* コース概要 cards (all the cards on the first card) */
+.card{
+    background-color: var(--darksecond);
+    border: solid 2px;
+    border-color: var(--darkfifth);
+}
+
+.list-group-item{
+    background-color: var(--darkthird);
+}
+
+#region-main{
+    background-color: var(--darksecond);
+}
+
+.form-control{
+    color: #979797;
+    background-color: var(--darkthird);
+}
+
+.form-control:focus{
+    color: #fff;
+    background-color: #283544;
+}
+
+
+
+
+.course-section .section-item {
+  border: 1px solid var(--darkfifth);
+}
+
+.btn.btn-icon.icons-collapse-expand {
+  color: #0f6cbf;
+  background-color: var(--darkfourth);
+}
+
+.h4.sectionname.course-content-item.d-flex.align-self-stretch.align-items-center.mb-0 > a{
+    color: var(--textbase);
+}
+
+.section-item{
+    color: var(--textbase);
+}
+
+.drawer{
+    background-color: var(--darksecond);
+    color: var(--textbase);
+}
+
+.courseindex .courseindex-item .courseindex-link, .courseindex .courseindex-item .courseindex-chevron {
+  color: var(--textbase);
+}
+
+.courseindex .courseindex-item .courseindex-link:focus{
+    color: var(--textbase);
+}
+
+.courseindex .courseindex-item:hover .courseindex-link{
+    color: var(--textsecond);
+}
+
+
+
+
+.path-mod .activity-header:not(:empty) {
+  background-color: var(--darkthird);
+}
+
+
+
+.course_category_tree .category.with_children.collapsed > .info > .categoryname {
+    background-image: url(/moodle/theme/image.php/boost/core/1788828762/t/collapsed);
+    filter: invert(1);
+}
+
+.div.collapsed:nth-child(1) > div:nth-child(1) > h4:nth-child(1) > a:nth-child{
+    filter: invert(1);
+}
+
+
+
+.course-section .availabilityinfo {
+    background-color: var(--darkfourth);
+}
+
+
+
+.secondary-navigation .navigation{
+    background-color: var(--darksecond);
+}
+
+.secondary-navigation .navigation {
+  border-bottom: 1px solid var(--darkfifth);
+}
+
+.moremenu .nav-tabs {
+    margin-left: 0;
+    background-color: var(--darksecond);
+}
+
+.moremenu .nav-link:hover {
+    background-color: var(--darkfifth);
+    color: var(--textbase);
+}
+
+.moremenu .nav-link.active {
+    color: var(--textbase);
+}
+
+.moremenu .nav-link.active:hover {
+    background-color: var(--darksecond);
+    color: var(--textbase);
+}
+
+/* ---------- NAVBAR ----------*/
+.bg-white{
+    background-color: var(--darksecond) !important;
+}
+
+
+#moremenu.navigation.observed .nav-item:hover{
+    color: var(--darkfifth);
+}
+
+
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--textbase);
+}
+
+.primary-navigation .navigation .nav-link{
+    color: var(--textsecond);
+}
+
+.primary-navigation .navigation .nav-link:hover{
+    color: var(--textsecond);
+    background-color: var(--darkfifth);
+}
+
+/* current active navlink */
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+    color: var(--textbase);
+}
+
+.dropdown-menu{
+    background-color: var(--darkthird);
+}
+
+.dropdown-item{
+    color: #b1b1b1;
+    background-color: var(--darkthird);
+}
+
+.dropdown-item:hover{
+    color: #d7d7d7;
+    background-color: #293f59;
+}
+
+/* vertical triple dot icon colour */
+.icon-size-3 .icon{
+    color: var(--textbase);
+}
+.btn.btn-icon.icon-size-3{
+    background-color: var(--darksecond);
+}
+
+.btn.btn-icon.icon-size-3:hover{
+    background-color: var(--darkfifth);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--textsecond);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--textbase);
+}
+
+
+
+
+/*.navbar-brand*/
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 0;
+    line-height: inherit;
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+.navbar-brand:after {
+    content: "POLITE（「ここ変えてほしい!」があれば、2621102 までお気軽にメールしてね！）";
+    color: var(--textbase);
+    display: inline-block;
+    padding-top: .32421875rem;
+    padding-bottom: .32421875rem;
+    margin-right: 1rem;
+    font-size: 1.171875rem;
+    line-height: inherit;
+    white-space: nowrap;
+    visibility: visible;
+}
